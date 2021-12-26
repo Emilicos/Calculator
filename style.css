@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --option-color: #0f1722;
+    --main-color: #1d293a;
+    --font-color:#d4d4d6;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline:none;
+}
+
+.container{
+    width:min(90%, 70.5rem);
+} 
+
+body{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: auto;
+    grid-template-areas: "option calculator";
+}
+
+.option{
+    grid-area: option;
+    background-color: var(--option-color);
+}
+
+.deeper-opt{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 9.5em 3em min-content min-content min-content min-content;
+    grid-template-areas: 
+    "title title title title title"
+    "select select select select select" 
+    ". button1 . button2 ." 
+    ". button3 . button4 ." 
+    ". button5 . button6 ." 
+    ". button7 . button8 .";
+}
+
+.option button{ 
+    padding: 2em 2em;
+    background-color: #151e2b;
+    color:var(--font-color);
+    font-weight: bolder;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left:0.5em;
+    border:none;
+    box-shadow: inset 0 0 0 0 #6c63ff;
+    transition: linear 0.3s;
+}
+
+.option button:hover{
+    box-shadow: inset 5.5em 0 0 0 #6c63ff;
+    cursor: pointer;
+    overflow:hidden;
+}
+
+.select{
+    grid-area: select;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    color:var(--font-color);
+    font-family: 'Bebas Neue', cursive;
+}
+
+.option-p{
+    grid-area:title;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--font-color);
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.btn-1{
+    grid-area: button1;
+}
+
+.btn-2{
+    grid-area: button2;
+}
+
+.btn-3{
+    grid-area: button3;
+}
+
+.btn-4{
+    grid-area: button4;
+}
+
+.btn-5{
+    grid-area: button5;
+}
+
+.btn-6{
+    grid-area: button6;
+}
+
+.btn-7{
+    grid-area: button7;
+}
+
+.btn-8{
+    grid-area: button8;
+}
+
+.calculator{
+    grid-area: calculator;
+    background-color: var(--main-color);
+}
+
+/* .parent-class{
+    display: grid;
+    grid-template-columns: 6.8fr 1.5fr 0.4fr 1.5fr 0.4fr 1.5fr 0.4fr 1.5fr 6.8fr;
+    grid-template-rows: 9.5em auto;
+    grid-template-areas: 
+    ". . . . . . calculation calculation ."
+    ". count1 . count2 . count3 . count4 ."
+    ". count5 . count6 . count7 . count8 ."
+    ". count9 . count10 . count11 . count12 ."
+    ". count13 . count14 . count15 . count16 ."
+    ". count17 count17 count17 . count18 . count19 .";
+} */
+
+/* .output{
+    grid-area: calculation;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color:var(--font-color);
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.output .previous-operand{
+
+}
+
+.count-1{
+    grid-area: count1;
+}
+
+.count-2{
+    grid-area: count2;
+}
+
+.count-3{
+    grid-area: count3;
+}
+
+.count-4{
+    grid-area: count4;
+}
+
+.count-5{
+    grid-area: count5;
+}
+
+.count-6{
+    grid-area: count6;
+}
+
+.count-7{
+    grid-area: count7;
+}
+
+.count-8{
+    grid-area: count8;
+}
+
+.count-9{
+    grid-area: count9;
+}
+
+.count-10{
+    grid-area: count10;
+}
+
+.count-11{
+    grid-area: count11;
+}
+
+.count-12{
+    grid-area: count12;
+}
+
+.count-13{
+    grid-area: count13;
+}
+
+.count-14{
+    grid-area: count14;
+}
+
+.count-15{
+    grid-area: count15;
+}
+
+.count-16{
+    grid-area: count16;
+}
+
+.count-17{
+    grid-area: count17;
+}
+
+.count-18{
+    grid-area: count18;
+}
+
+.count-19{
+    grid-area: count19;
+}
+
+.calculator button{
+    width: 5.5em;
+    height: 5em; 
+    background-color: #151e2b;
+    color:var(--font-color);
+    font-weight: bolder;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    margin-left:0.5em;
+    border:none;
+    box-shadow: inset 0 0 0 0 #6c63ff;
+    transition: linear 0.3s;
+}
+
+.calculator button:hover{
+    box-shadow: inset 5.5em 0 0 0 #6c63ff;
+    cursor: pointer;
+    overflow:hidden;
+}
+
+.count-17 button{
+    width: 13em;
+}
+
+.count-17 button:hover{
+    box-shadow: inset 13em 0 0 0 #6c63ff;
+} */
+
+.parent-class{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: (120px, auto) repeat(5, 100px);
+}
+
+.btn > button {
+    width: 5.5em;
+    height: 5em; 
+    background-color: #151e2b;
+    color:var(--font-color);
+    font-weight: bolder;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    margin-left:0.5em;
+    border:none;
+    box-shadow: inset 0 0 0 0 #6c63ff;
+    transition: linear 0.3s;
+}
+
+.btn > button:hover{
+    box-shadow: inset 5.5em 0 0 0 #6c63ff;
+    cursor: pointer;
+    overflow:hidden;
+}
+
+.count-17{
+    grid-column: span 2;
+}
+
+.count-17 button{
+    width: 13em;
+}
+
+.count-17 button:hover{
+    box-shadow: inset 13em 0 0 0 #6c63ff; 
+}
+.output {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+  
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1rem;
+}
+  
+.output .current-operand {
+    color: var(--font-color);
+    font-size: 2rem;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--dark);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
